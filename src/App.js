@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import routes from './routes';
+import { HashRouter } from 'react-router-dom';
 
 export default class App extends Component {
   render() {
     return (
+      <HashRouter>
       <div>
         <nav className='nav'>
           <div>WestSide University</div> 
@@ -15,6 +17,7 @@ export default class App extends Component {
         </nav>
         {routes}
       </div>
+      </HashRouter>
     );
   }
 }
